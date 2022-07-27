@@ -18,7 +18,7 @@ openSUSE MicroOS appliance (prebuilt VM image) has a separate
 This feature is handy for rootful containers.
 Since their storages reside in `/var/lib/container/storage`,
 it keeps `/` partition clean and never gets full,
-while making sure each container gets as much space as they need.
+while making sure each container gets as much space as it needs.
 
 But I prefer rootless containers,
 and let their storages live under my
