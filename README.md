@@ -9,7 +9,7 @@ let alone in an already installed system!
 Include it at the very end of combustion script to use.
 
 Beware.
-The script has not been throughfully tested.
+The script has not been thoroughly tested.
 
 # Rationale
 
@@ -18,7 +18,7 @@ openSUSE MicroOS appliance (prebuilt VM image) has a separate
 This feature is handy for rootful containers.
 Since their storages reside in `/var/lib/container/storage`,
 it keeps `/` partition clean and never gets full,
-while making sure each container gets as much space as they need.
+while making sure each container gets as much space as it needs.
 
 But I prefer rootless containers,
 and let their storages live under my
@@ -26,11 +26,11 @@ and let their storages live under my
 as podman's default.
 
 This means my containers may run out of space,
-since the home directory lies inside '/' partition,
-right before '/var',
-without any feasible solution
+since the home directory lies inside `/` partition,
+right before `/var`,
+without any easy solution
 but to attach more storage
-and move my home around--not as simple as enlarging a single disk
+and move my home around—not as simple as enlarging a single disk
 and letting it autogrow,
 as with rootful containers.
 
