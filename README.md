@@ -9,7 +9,7 @@ let alone in an already installed system!
 Include it at the very end of combustion script to use.
 
 Beware.
-The script has not been throughfully tested.
+The script has not been thoroughly tested.
 
 # Rationale
 
