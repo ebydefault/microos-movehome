@@ -52,8 +52,8 @@ to send it over partitions at *block level*,
 meaning with all SELinux contexts attached.
 
 So I move my home under `/var/@/home` subvolume,
-taking advantage of /var partition autogrow feature,
-mount it as ordinary /home
+taking advantage of `/var` partition autogrow feature,
+mount it as ordinary `/home`
 without modifying `/etc/fstab` entry but its UUID.
 
 It's not beautiful indeed,
