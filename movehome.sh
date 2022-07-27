@@ -17,6 +17,7 @@ mount -o subvolid=0 /dev/disk/by-label/SPARE /mnt/VAR
 
 # Take an RO snapshot
 btrfs subvolume snapshot -r /mnt/ROOT/@/home /mnt/ROOT/@/home_ro
+sync
 
 # Crate parent subvolume
 btrfs subvolume create /mnt/VAR/@
@@ -26,10 +27,12 @@ btrfs send /mnt/ROOT/@/home_ro | btrfs receive /mnt/VAR/@
 
 # Take an RW snapshot
 btrfs subvolume snapshot /mnt/VAR/@/home_ro /mnt/VAR/@/home
+sync
 
 # Remove RO snapshots
 btrfs subvolume delete /mnt/ROOT/@/home_ro
 btrfs subvolume delete /mnt/VAR/@/home_ro
+btrfs subvolume sync
 
 # Clean up
 umount /mnt/ROOT
