@@ -26,9 +26,9 @@ and let their storages live under my
 as podman's default.
 
 This means my containers may run out of space,
-since the home directory lies inside '/' partition,
-right before '/var',
-without any feasible solution
+since the home directory lies inside `/` partition,
+right before `/var`,
+without any easy solution
 but to attach more storage
 and move my home around--not as simple as enlarging a single disk
 and letting it autogrow,
