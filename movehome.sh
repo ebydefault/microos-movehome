@@ -44,5 +44,5 @@ UUID=$(blkid | grep SPARE | awk '{print $3}' | tr -d '"')
 
 sed -nri 's,UUID=\S+( /home.+),'${UUID}'\1,;p' /etc/fstab
 
-# Remount /var for any process ahead
+# Remount /var for any remaining process
 mount /var
