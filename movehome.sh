@@ -8,6 +8,8 @@
 #                                                                      #
 ########################################################################
 
+# /home is assumed to be unmounted
+
 umount /var # mounted by default
 
 # Create mount points
